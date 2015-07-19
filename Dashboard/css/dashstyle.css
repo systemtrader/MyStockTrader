@@ -12,10 +12,66 @@ body{
   -moz-osx-font-smoothing: grayscale;
   padding-bottom: 2cm;}
 
-p{
+p {
   text-align: left;
+}
+
+#welcomeHead {
+  /*Centering and padding*/
+  padding: 0;
+  width: 75%;
+  margin-left: 20%;
+  margin-right: auto;
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+  /*Text formatting*/
+  line-height: 1;
+  color: #33b5e5;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+#availFunds, #invFunds, #stockOwn, #totPortSize, #portRet {
+  line-height: 1;
+  color: black;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+
+#availFunds, #invFunds, #totPortSize, #portRet {
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+
+    column-fill: auto;
+}
+
+#availFunds, #totPortSize {
+  display: ; 
+}
+/*
+#availFunds, #invFunds, #stockOwn {
+  margin: 0 0 20px;
+}*/
+
+/*#totPortSize {
+  margin: 0 0 20px;
+  margin-left: 50%;
+  margin-top: -70px;
+}
+*/
+#stockOwn {
+  padding-top: 25px ;
+}
+
+/* The following is a level of risk selected by the user, 
+which will be plugged into a sentence describing a notice.*/
+#techIndic {
 
 }
+
 
 .form {
   position: relative;

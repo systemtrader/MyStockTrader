@@ -14,22 +14,31 @@
 <body>
 
 
-    <div class='form aniamted bounceIn'>
-
+    <div class='form animated bounceIn'>
+      
+      <!-- The following href link needs to be adapted when deployed onto Bluemix -->
       <a href="file:///Users/kristinvandeusen/Desktop/Code/My%20Stock%20Trader/HomePage/Homepage.html"> <button type="button"> Logout </button> </a>
-      <a href = "file:///Users/kristinvandeusen/Desktop/Code/My%20Stock%20Trader/Glossary/glossary.html"> <button type = "button"> Glossary </button> </a>
-      <p> Available Funds: </p>
 
-      <p> Total Portfolio Size: </p>
+      <h1 id="welcomeHead">Welcome to your MyStockTrader Dashboard!</h1>
 
-      <p> Technical Indicators: </p>
+      <p id="availFunds"> Available Funds: </p>
 
-      <p> Invested Funds: </p>
+      <p id="invFunds"> Invested Funds: </p>
 
-      <p> Portfolio Return: </p>
+      <p id="totPortSize"> Total Portfolio Size: </p>
 
-      <p> Stocks Owned: </p>
+      <p id="portRet"> Portfolio Return: </p>
 
+      <p id="stockOwn"> Stocks Owned: </p>
+
+      <!-- This needs to be a used in a sentence like a fprintf statement in Python --> 
+      <var id="techIndic"> Technical Indicators: </var>
+
+      <!-- some kind of database result that sets the var tag for the techIndic to the stated risk level -->
+
+      <p id="techNotice"> Notice: The following is a projected return based on historical data from choosing a </p>  <p> investment.</p>
+
+    
     </div>
 
 
