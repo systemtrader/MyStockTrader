@@ -1,0 +1,113 @@
+body{
+	background-color: #3b4b54; width : 100%;
+	background: url("stock-bg.jpg");
+	background-attachment: fixed;
+	background-size: cover;
+	height: 100%;
+	margin: 0 auto;
+	margin-top: 75px;
+  font-family: 'Roboto', sans-serif;
+	color: black;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding-bottom: 2cm;}
+
+p{
+  text-align: left;
+
+}
+
+.form {
+  position: relative;
+  background: #ffffff;
+  width: 1000px;
+  height: 1000px;
+  margin: 40px auto 0;
+  padding: 40px;
+  border-top: 5px solid #33b5e5;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
+}
+
+
+.form h2 {
+  margin: 0 0 20px;
+  line-height: 1;
+  color: #33b5e5;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.form input {
+  outline: none;
+  display: block;
+  width: 100%;
+  margin: 0 0 20px;
+  padding: 10px 15px;
+  border: 1px solid #d9d9d9;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  color: #ccc;
+  font-family: "Roboto";
+  -webkti-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-wieght: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition: all 0.3s linear 0s;
+  -moz-transition: all 0.3s linear 0s;
+  -ms-transition: all 0.3s linear 0s;
+  -o-transition: all 0.3s linear 0s;
+  transition: all 0.3s linear 0s;
+}
+.form input:focus {
+  color: #333333;
+  border: 1px solid #33b5e5;
+}
+.form button {
+  cursor: pointer;
+  background: #33b5e5;
+  width: 30%;
+  padding: 10px 15px;
+  margin-left: 720px;
+  margin-bottom: 25px;
+  border: 0;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  color: #ffffff;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition: all 0.3s linear 0s;
+  -moz-transition: all 0.3s linear 0s;
+  -ms-transition: all 0.3s linear 0s;
+  -o-transition: all 0.3s linear 0s;
+  transition: all 0.3s linear 0s;
+
+}
+.form button:hover {
+  background: #1a9bcb;
+}
+
+.info {
+  width: 300px;
+  margin: 25px auto;
+  text-align: center;
+}
+.info h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  font-weight: 400;
+  color: #333333;
+}

@@ -1,0 +1,141 @@
+
+/* style.css
+ * This file provides css styles.
+ */
+
+
+body{
+	background-color: #3b4b54; width : 100%;
+	background: url("stock-bg.jpg");
+	background-attachment: fixed;
+	background-size: cover;
+	height: 100%;
+	margin: 0 auto;
+	margin-top: 75px;
+  font-family: 'Roboto', sans-serif;
+	color: black;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+button {
+  cursor: pointer;
+  background: #33b5e5;
+  padding: 10px 15px;
+  margin-bottom: 25px;
+  border: 0;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  color: #ffffff;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition: all 0.3s linear 0s;
+  -moz-transition: all 0.3s linear 0s;
+  -ms-transition: all 0.3s linear 0s;
+  -o-transition: all 0.3s linear 0s;
+  transition: all 0.3s linear 0s;
+}
+button:hover {
+  background: #1a9bcb;
+}
+
+/* This portion is for the middle box that will be where the interaction takes place. */
+
+
+
+
+.box {
+  background: url("logo.png");
+  background-size: 700px 500px;
+  background-repeat: no-repeat;
+  background-position:47% 150%;
+  right: 30px;
+	margin-left: auto;
+  color: white;
+	margin-right: auto;
+	border-top-style: solid;
+	border-top-color: black;
+	text-align: center;
+	width: 50%;
+	border-radius: 25px;
+  padding-top: 7cm;
+  padding-bottom: 1cm;
+}
+
+
+
+a {
+	text-decoration: none;
+	color: #00aed1;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+
+h1 {
+	font-weight: bold;
+	font-size: 2em;
+}
+
+.leftHalf {
+	float: left;
+	background-color: #26343f;
+	width: 45%;
+	height: 100%;
+}
+
+.rightHalf {
+	float: right;
+	width: 55%;
+	background-color: #313f4a;
+	height: 100%;
+	overflow:auto;
+}
+
+.description {
+	padding-left: 50px;
+	padding-right: 50px;
+	text-align: center;
+	font-size: 1.2em;
+}
+
+.blue {
+	color: #00aed1;
+}
+
+
+table {
+	table-layout: fixed;
+	width: 800px;
+	margin: 0 auto;
+	word-wrap: break-word;
+	padding-top:10%;
+}
+
+th {
+	border-bottom: 1px solid #000;
+}
+
+th, td {
+	text-align: left;
+	padding: 2px 20px;
+}
+
+.env-var {
+	text-align: right;
+	border-right: 1px solid #000;
+	width: 30%;
+}
+
+pre {
+	padding: 0;
+	margin: 0;
+}

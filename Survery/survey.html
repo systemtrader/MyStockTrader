@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel='stylesheet prefetch' href='http://daneden.github.io/animate.css/animate.min.css'>
+    <link rel='stylesheet prefetch' href='http://fonts.googleapis.com/css?family=Roboto:400,100,400italic,700italic,700'>
+    <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="css/surveystyle.css">
+    <title> Survey </title>
+  </head>
+
+
+<body>
+
+	<div class='form aniamted bounceIn'>
+
+  <div class="survey">
+
+		<h5>Financial Objectives &amp; Income</h5>
+		<h4>In order to help you explore motifs please tell us a little about your financial situation and objectives.</h4>
+
+     <form name="financials" action="/application/wizard/update" method="post">
+	    <div id="financials">
+
+				<br>
+				<div class="group">
+			  <h3>What is your risk tolerance? <span class="greyText">(choose one)</span></h3>
+			  <div class="radioGroup hover">
+				<label class="third spacer {{#ifEquals view.riskTolerance "low"}}selected{{/ifEquals}}"><input {{#ifEquals view.riskTolerance "low"}}checked="checked"{{/ifEquals}} type="radio" name="riskTolerance" value="low"/> <span>Low</span> </label>
+				<label class="third {{#ifEquals view.riskTolerance "medium"}}selected{{/ifEquals}}"><input {{#ifEquals view.riskTolerance "medium"}}checked="checked"{{/ifEquals}} type="radio" name="riskTolerance" value="medium"/> <span>Medium     </span></label>
+				<label class="third right {{#ifEquals view.riskTolerance "high"}}selected{{/ifEquals}}"><input {{#ifEquals view.riskTolerance "high"}}checked="checked"{{/ifEquals}} type="radio" name="riskTolerance" value="high"/> <span>High    </span></label>
+				</div>
+				</div>
+
+			<div class="group">
+			<br>
+			<h3>What is your annual income?</h3>
+			<div class="radioGroup hover">
+			<label class="quarter spacer {{#ifEquals view.annualHouseholdIncome "under25k"}}selected{{/ifEquals}} "><input {{#ifEquals view.annualHouseholdIncome "under25k"}}checked="checked"{{/ifEquals}} type="radio" name="annualHouseholdIncome" value="under25k"/> <span>Under $25k</span></label>
+			<label class="quarter spacer {{#ifEquals view.annualHouseholdIncome "25kto50k"}}selected{{/ifEquals}} "><input {{#ifEquals view.annualHouseholdIncome "25kto50k"}}checked="checked"{{/ifEquals}} type="radio" name="annualHouseholdIncome" value="25kto50k"/> <span>$25k-$50k</span></label>
+			<label class="quarter spacer {{#ifEquals view.annualHouseholdIncome "50kto100k"}}selected{{/ifEquals}} "><input {{#ifEquals view.annualHouseholdIncome "50kto100k"}}checked="checked"{{/ifEquals}} type="radio" name="annualHouseholdIncome" value="50kto100k"/> <span>$50k-$100k</span></label>
+			<label class="quarter right {{#ifEquals view.annualHouseholdIncome "over100k"}}selected{{/ifEquals}} "><input {{#ifEquals view.annualHouseholdIncome "over100k"}}checked="checked"{{/ifEquals}} type="radio" name="annualHouseholdIncome" value="over100k"/> <span>Over $100k</span></label>
+			</div>
+			</div>
+
+			<div class="group">
+			<br>
+			<h3>What is your total net worth?</h3>
+			<div class="radioGroup hover">
+			<label class="quarter spacer {{#ifEquals view.totalNetWorth "under50k"}}selected{{/ifEquals}} "><input {{#ifEquals view.totalNetWorth "under50k"}}checked="checked"{{/ifEquals}} type="radio" name="totalNetWorth" value="under50k"/> <span>Under $50k</span></label>
+			<label class="quarter spacer {{#ifEquals view.totalNetWorth "50kto100k"}}selected{{/ifEquals}} "><input {{#ifEquals view.totalNetWorth "50kto100k"}}checked="checked"{{/ifEquals}} type="radio" name="totalNetWorth" value="50kto100k"/> <span>$50k-$100k</span></label>
+			<label class="quarter spacer {{#ifEquals view.totalNetWorth "100kto500k"}}selected{{/ifEquals}} "><input {{#ifEquals view.totalNetWorth "100kto500k"}}checked="checked"{{/ifEquals}} type="radio" name="totalNetWorth" value="100kto500k"/> <span>$100k-$500k</span></label>
+			<label class="quarter right {{#ifEquals view.totalNetWorth "over500k"}}selected{{/ifEquals}} "><input {{#ifEquals view.totalNetWorth "over500k"}}checked="checked"{{/ifEquals}} type="radio" name="totalNetWorth" value="over500k"/> <span>Over $500k</span></label>
+			</div>
+			</div>
+
+			<div class="group">
+			<br>
+			<h3>What is your financial objective? <span class="help" data-template="financialObjectiveHelpTemplate"></span></h3>
+			<div>
+			<select class="full standard" name="financialObjective">
+			<option value="capital" {{#ifEquals view.financialObjective "capital"}}selected="selected"{{/ifEquals}}>Capital Preservation</option>
+			<option value="income" {{#ifEquals view.financialObjective "income"}}selected="selected"{{/ifEquals}}>Income</option>
+			<option value="growth" {{#ifEquals view.financialObjective "growth"}}selected="selected"{{/ifEquals}}>Growth</option>
+			<option value="speculation" {{#ifEquals view.financialObjective "speculation"}}selected="selected"{{/ifEquals}}>Speculation</option>
+			</select>
+			</div>
+		  </div>
+
+			<div class="group">
+			<br>
+			<h3>What is your investment experience?</h3>
+			<div>
+			<select class="full standard" name="investmentExperience">
+			<option value="excellent" {{#ifEquals view.investmentExperience "excellent"}}selected="selected"{{/ifEquals}}>Excellent</option>
+			<option value="good" {{#ifEquals view.investmentExperience "good"}}selected="selected"{{/ifEquals}}{{#if view.investmentExperience}}{{else}}selected="selected"{{/if}}>Good</option>
+			<option value="limited" {{#ifEquals view.investmentExperience "limited"}}selected="selected"{{/ifEquals}}>Limited</option>
+			<option value="none" {{#ifEquals view.investmentExperience "none"}}selected="selected"{{/ifEquals}}>None</option>
+			</select>
+			</div>
+			</div>
+
+	</div>
+	<br>
+	<a href="file:///Users/kristinvandeusen/Desktop/Code/My%20Stock%20Trader/Dashboard/dashboard.html"><button type="button"> Submit </button></a>
+	</form>
+
+
+</div>
+</div>
+
+
+  </body>
+</html>
